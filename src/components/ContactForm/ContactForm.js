@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
     
 class Contactform extends Component {
     state = {
@@ -67,6 +68,10 @@ class Contactform extends Component {
         </>
         );
     }
+};
+
+Contactform.propTypes = {
+  onSubmit: PropTypes.func.isRequired
 };
 
 export default Contactform;
